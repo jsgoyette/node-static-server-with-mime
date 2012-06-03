@@ -17,7 +17,7 @@ Assuming the script is executable (`chmod +x`), run with:
 To make the script available from any directory, place the file in your bash PATH, such as:
 
 ```
-sudo cat server.js > /usr/local/bin/server
+sudo cp server.js /usr/local/bin/server
 sudo chmod 755 /usr/local/bin/server
 ```
 
