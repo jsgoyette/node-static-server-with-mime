@@ -12,8 +12,10 @@ Assuming the script is executable (chmod +x), run with:
 
 To make the script available from any directory, place the file in you bash path, such as:
 
-`sudo cat server.js > /usr/bin/local/server`
-`sudo chmod 755 server`
+```
+sudo cat server.js > /usr/bin/local/server
+sudo chmod 755 server
+```
 
 Then just call from any directory:
 
