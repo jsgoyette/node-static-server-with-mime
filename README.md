@@ -7,9 +7,9 @@ I wanted a script that I could call from any directory (having no dependencies),
 serve files with mime types (if anything, to get rid of the missing mime-type warnings in
 the console). This scripts accomplishes just that.
 
-Assuming the script is executable (chmod +x), run with:
+Assuming the script is executable (`chmod +x`), run with:
 
-`./server.js [port]`
+```./server.js [port]```
 
 To make the script available from any directory, place the file in your bash PATH, such as:
 
@@ -20,4 +20,4 @@ sudo chmod 755 /usr/local/bin/server
 
 Then just call from any directory:
 
-`server [port]`
+```server [port]```
