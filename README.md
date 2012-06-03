@@ -9,7 +9,9 @@ the console). This scripts accomplishes just that.
 
 Assuming the script is executable (`chmod +x`), run with:
 
-```./server.js [port]```
+```
+./server.js [port]
+```
 
 To make the script available from any directory, place the file in your bash PATH, such as:
 
@@ -20,4 +22,6 @@ sudo chmod 755 /usr/local/bin/server
 
 Then just call from any directory:
 
-```server [port]```
+```
+server [port]
+```
