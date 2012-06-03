@@ -1,11 +1,12 @@
 node-static-server-with-mime
 ============================
 
-A simple static server with mime types and no dependencies, all contained within a single file.
+A simple Node.js static server with mime types and no dependencies, all contained within a single
+file.
 
-I wanted a script that I could call from any directory (having no dependencies), but that could 
-serve files with mime types (if anything, to get rid of the missing mime-type warnings in
-the console). This scripts accomplishes just that.
+I wanted a utility script that I could call from any directory (having no dependencies), but 
+that could serve files with mime types (if anything, to get rid of the missing mime-type warnings 
+in the console). This script accomplishes just that.
 
 Assuming the script is executable (`chmod +x`), run with:
 
