@@ -46,6 +46,7 @@ http.createServer(function(request, response) {
 
 console.log("Static file server running at\n  => http://localhost:" + port + "/\nCTRL + C to shutdown");
 
+// from https://github.com/ry/node_chat
 var mime = {
   // returns MIME type for extension, or fallback, or octet-steam
   lookupExtension : function(ext, fallback) {
