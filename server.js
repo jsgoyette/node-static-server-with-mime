@@ -30,8 +30,8 @@ http.createServer(function(request, response) {
 
       var isdir = filestats.isDirectory();
 
-      // if is directory and index.html exist, return index.html
-      // NB: server will respond differently depending whether or not there is a trailing slash
+      // if is directory and index.html exists, return index.html
+      // NB: server will respond differently depending whether or not uri has a trailing slash
       if (isdir) {
         if (fs.existsSync(filename + 'index.html')) {
           filename += 'index.html';
