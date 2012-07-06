@@ -14,11 +14,10 @@ http.createServer(function(request, response) {
   fs.exists(filename, function(exists) {
 
     // if requested file/dir does not exist, return 404
-    if(!exists) {
+    if (!exists) {
       console.log('File not found: ' + filename);
       response.writeHead(404, {'Content-Type': 'text/plain'});
-      response.write('404 Not Found\n');
-      response.end();
+      response.end('404 Not Found\n');
       return;
     }
 
@@ -64,7 +63,7 @@ http.createServer(function(request, response) {
       // else return file
       } else {
         fs.readFile(filename, 'binary', function(err, file) {
-          if(err) {        
+          if (err) {
             console.log('Error loading path: ' + err.path);
             response.writeHead(500, {'Content-Type': 'text/plain'});
             response.end('500 Error\n');
